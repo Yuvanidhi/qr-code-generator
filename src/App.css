@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F4F8; /* Light background color */
+  color: #333; /* Dark text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px; /* Adjusted width for a more compact layout */
+  background: #FFFFFF; /* Light background for the container */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.App:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0056b3; /* Primary color for headings */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+input[type="text"] {
+  height: 45px;
+  width: 100%;
+  max-width: 500px; /* Adjusted width for better usability */
+  font-size: 1.1rem;
+  padding: 0 15px;
+  border: 1px solid #0056b3; /* Primary color border */
+  border-radius: 8px;
+  background-color: #F9F9F9; /* Light secondary background */
+  color: #333; /* Dark text color */
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3; /* Highlight border on focus */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.5); /* Light blue shadow */
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  height: 45px;
+  width: 120px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF; /* Light text color */
+  background: #0056b3; /* Primary color for buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #004494; /* Darker shade of primary color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  background: #003374; /* Even darker shade for active state */
+  transform: translateY(1px); /* Subtle press effect */
+  box-shadow: none;
+}
+
+button.reset {
+  background: #f44336; /* Red color for reset button */
+}
+
+button.reset:hover {
+  background: #d32f2f; /* Darker shade on hover */
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between; /* Align items side by side */
+  gap: 20px;
+  width: 100%;
+  max-width: 600px; /* Adjusted width for extra section */
+}
+
+.color-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px; /* Space between color and size options */
+}
+
+input[type="color"] {
+  height: 30px;
+  width: 30px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"] {
+  width: 100%;
+  max-width: 250px; /* Adjusted width for range */
+  background: #F9F9F9; /* Light background for range */
+  border-radius: 8px;
+}
+
+span {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  color: #333; /* Dark text color */
+}
+
+.output-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px; /* Adjusted width for output box */
+}
+
+img {
+  max-width: 100%; /* Ensure QR code fits within its container */
+  border-radius: 8px; /* Rounded corners for QR code image */
+}
+
+.loader {
+  font-size: 1.1rem;
+  color: #0056b3; /* Primary color for loader */
+}
+
+.error {
+  font-size: 1rem;
+  color: #f44336; /* Red color for error messages */
+}
+
+.download-button {
+  background-color: #0056b3; /* Primary color for download button */
+  border-radius: 8px;
+}
+
+.download-button:hover {
+  background-color: #004494; /* Darker shade on hover */
+}
